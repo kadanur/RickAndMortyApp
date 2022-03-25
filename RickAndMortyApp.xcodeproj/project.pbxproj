@@ -13,6 +13,8 @@
 		BA5213E627EDB98200A631A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5213E427EDB98200A631A7 /* Main.storyboard */; };
 		BA5213E827EDB98300A631A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5213E727EDB98300A631A7 /* Assets.xcassets */; };
 		BA5213EB27EDB98300A631A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA5213E927EDB98300A631A7 /* LaunchScreen.storyboard */; };
+		BA5213F827EDB9D200A631A7 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5213F727EDB9D200A631A7 /* WebServices.swift */; };
+		BA5213FA27EDBA6700A631A7 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5213F927EDBA6700A631A7 /* CharactersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BA5213E727EDB98300A631A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA5213EA27EDB98300A631A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA5213EC27EDB98300A631A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5213F727EDB9D200A631A7 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		BA5213F927EDBA6700A631A7 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,11 @@
 		BA5213DD27EDB98200A631A7 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
-				BA5213DE27EDB98200A631A7 /* AppDelegate.swift */,
-				BA5213E027EDB98200A631A7 /* SceneDelegate.swift */,
+				BA5213F627EDB9AB00A631A7 /* Models */,
+				BA5213F527EDB9A600A631A7 /* UI */,
+				BA5213F427EDB9A000A631A7 /* Supports */,
+				BA5213F327EDB99A00A631A7 /* Resources */,
+				BA5213F227EDB99500A631A7 /* Services */,
 				BA5213E227EDB98200A631A7 /* ViewController.swift */,
 				BA5213E427EDB98200A631A7 /* Main.storyboard */,
 				BA5213E727EDB98300A631A7 /* Assets.xcassets */,
@@ -65,6 +72,45 @@
 				BA5213EC27EDB98300A631A7 /* Info.plist */,
 			);
 			path = RickAndMortyApp;
+			sourceTree = "<group>";
+		};
+		BA5213F227EDB99500A631A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA5213F727EDB9D200A631A7 /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA5213F327EDB99A00A631A7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA5213F427EDB9A000A631A7 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				BA5213DE27EDB98200A631A7 /* AppDelegate.swift */,
+				BA5213E027EDB98200A631A7 /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		BA5213F527EDB9A600A631A7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BA5213F627EDB9AB00A631A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA5213F927EDBA6700A631A7 /* CharactersModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +186,8 @@
 			files = (
 				BA5213E327EDB98200A631A7 /* ViewController.swift in Sources */,
 				BA5213DF27EDB98200A631A7 /* AppDelegate.swift in Sources */,
+				BA5213F827EDB9D200A631A7 /* WebServices.swift in Sources */,
+				BA5213FA27EDBA6700A631A7 /* CharactersModel.swift in Sources */,
 				BA5213E127EDB98200A631A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

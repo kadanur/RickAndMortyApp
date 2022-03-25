@@ -11,7 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        WebServices().fetchCharactersData(url: URL(string: "https://rickandmortyapi.com/api/character/")!) { result in
+            print(result)
+        }
+        
     }
 
 
