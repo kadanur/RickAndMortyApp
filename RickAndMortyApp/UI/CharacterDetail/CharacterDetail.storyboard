@@ -15,8 +15,63 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7h-5k-0J5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="278"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Yx4-dn-QBX">
+                                <rect key="frame" x="10" y="386" width="394" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-Su-ie2" userLabel="Id">
+                                        <rect key="frame" x="197" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZq-UP-0hV" userLabel="Name">
+                                        <rect key="frame" x="197" y="12" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-Wg-WOL" userLabel="Status">
+                                        <rect key="frame" x="197" y="24" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyI-fS-2Dq" userLabel="Species">
+                                        <rect key="frame" x="154.5" y="36" width="85.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfU-d9-EsL" userLabel="Gender">
+                                        <rect key="frame" x="197" y="72" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frL-uE-eXb" userLabel="Location">
+                                        <rect key="frame" x="197" y="84" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g7h-5k-0J5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1qS-aS-GeK"/>
+                            <constraint firstItem="g7h-5k-0J5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="FXL-mp-Ap9"/>
+                            <constraint firstItem="g7h-5k-0J5" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.359173" id="Gr3-97-tUF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Yx4-dn-QBX" secondAttribute="trailing" constant="10" id="Kpd-UH-TRb"/>
+                            <constraint firstItem="g7h-5k-0J5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SWt-dI-dq9"/>
+                            <constraint firstItem="Yx4-dn-QBX" firstAttribute="top" secondItem="g7h-5k-0J5" secondAttribute="bottom" constant="20" id="Sa6-j3-cHS"/>
+                            <constraint firstItem="Yx4-dn-QBX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="e1k-nY-xmo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FiA-Ch-IeU">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="NKf-PR-vDf">
@@ -25,6 +80,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="characterImage" destination="g7h-5k-0J5" id="WX2-a7-Xho"/>
+                        <outlet property="genderLabel" destination="cfU-d9-EsL" id="K9q-gl-38J"/>
+                        <outlet property="idLabel" destination="yy6-Su-ie2" id="r0B-BB-Vaj"/>
+                        <outlet property="locationLabel" destination="frL-uE-eXb" id="bfn-qS-i1h"/>
+                        <outlet property="nameLabel" destination="WZq-UP-0hV" id="hlp-M0-leb"/>
+                        <outlet property="speciesLabel" destination="PyI-fS-2Dq" id="x18-pT-aaH"/>
+                        <outlet property="statusLabel" destination="z6e-Wg-WOL" id="kWm-rd-HHe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

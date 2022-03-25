@@ -21,6 +21,7 @@
 		BA52140E27EDCD3400A631A7 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52140C27EDCD3400A631A7 /* CharacterCell.swift */; };
 		BA52140F27EDCD3400A631A7 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA52140D27EDCD3400A631A7 /* CharacterCell.xib */; };
 		BA52141227EDDDCE00A631A7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA52141127EDDDCE00A631A7 /* SDWebImage */; };
+		BA52141427EDFAE700A631A7 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52141327EDFAE700A631A7 /* CharacterDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		BA52140527EDC5F000A631A7 /* CharacterDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterDetail.storyboard; sourceTree = "<group>"; };
 		BA52140C27EDCD3400A631A7 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		BA52140D27EDCD3400A631A7 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		BA52141327EDFAE700A631A7 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				BA52140327EDC59B00A631A7 /* CharacterDetailViewController.swift */,
 				BA52140527EDC5F000A631A7 /* CharacterDetail.storyboard */,
+				BA52141327EDFAE700A631A7 /* CharacterDetailViewModel.swift */,
 			);
 			path = CharacterDetail;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				BA52140E27EDCD3400A631A7 /* CharacterCell.swift in Sources */,
 				BA5213F827EDB9D200A631A7 /* WebServices.swift in Sources */,
 				BA52140427EDC59B00A631A7 /* CharacterDetailViewController.swift in Sources */,
+				BA52141427EDFAE700A631A7 /* CharacterDetailViewModel.swift in Sources */,
 				BA5213FA27EDBA6700A631A7 /* CharactersModel.swift in Sources */,
 				BA5213E127EDB98200A631A7 /* SceneDelegate.swift in Sources */,
 			);
