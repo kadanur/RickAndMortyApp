@@ -22,4 +22,5 @@ struct CharactersInfo: Codable {
 struct CharactersResult: Codable {
     var id: Int
     var name: String
+    var image: String
 }
