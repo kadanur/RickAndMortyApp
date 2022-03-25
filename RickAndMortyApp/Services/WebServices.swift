@@ -8,7 +8,6 @@
 import Foundation
 
 class WebServices {
-    
     func fetchCharactersData(url: URL, completion: @escaping (CharactersMain?) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {

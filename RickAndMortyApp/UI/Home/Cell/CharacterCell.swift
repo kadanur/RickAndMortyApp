@@ -16,9 +16,8 @@ class CharacterCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        cardView.layer.cornerRadius = 10
         cardView.layer.shadowRadius = 12
-        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.shadowOpacity = 0.3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
