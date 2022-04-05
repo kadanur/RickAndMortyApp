@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BA4F03A527FC2ECD0086E949 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA4F03A327FC2ECD0086E949 /* CoreData.xcdatamodeld */; };
+		BA4F03A827FC4E2D0086E949 /* SavedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F03A627FC4E2D0086E949 /* SavedCell.swift */; };
+		BA4F03A927FC4E2D0086E949 /* SavedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA4F03A727FC4E2D0086E949 /* SavedCell.xib */; };
 		BA5213DF27EDB98200A631A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5213DE27EDB98200A631A7 /* AppDelegate.swift */; };
 		BA5213E127EDB98200A631A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5213E027EDB98200A631A7 /* SceneDelegate.swift */; };
 		BA5213E827EDB98300A631A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5213E727EDB98300A631A7 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		BA4F03A427FC2ECD0086E949 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		BA4F03A627FC4E2D0086E949 /* SavedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCell.swift; sourceTree = "<group>"; };
+		BA4F03A727FC4E2D0086E949 /* SavedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedCell.xib; sourceTree = "<group>"; };
 		BA5213DB27EDB98200A631A7 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5213DE27EDB98200A631A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA5213E027EDB98200A631A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 		BA587D5C27FC2720000F8D8C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BA4F03A627FC4E2D0086E949 /* SavedCell.swift */,
+				BA4F03A727FC4E2D0086E949 /* SavedCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 				BA52140627EDC5F000A631A7 /* CharacterDetail.storyboard in Resources */,
 				BA52140F27EDCD3400A631A7 /* CharacterCell.xib in Resources */,
 				BA5213EB27EDB98300A631A7 /* LaunchScreen.storyboard in Resources */,
+				BA4F03A927FC4E2D0086E949 /* SavedCell.xib in Resources */,
 				BA587D5E27FC2732000F8D8C /* Saved.storyboard in Resources */,
 				BA5213E827EDB98300A631A7 /* Assets.xcassets in Resources */,
 			);
@@ -266,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA5213FD27EDC24900A631A7 /* HomeViewController.swift in Sources */,
+				BA4F03A827FC4E2D0086E949 /* SavedCell.swift in Sources */,
 				BA52140127EDC2E600A631A7 /* HomeViewModel.swift in Sources */,
 				BA5213DF27EDB98200A631A7 /* AppDelegate.swift in Sources */,
 				BA52140E27EDCD3400A631A7 /* CharacterCell.swift in Sources */,

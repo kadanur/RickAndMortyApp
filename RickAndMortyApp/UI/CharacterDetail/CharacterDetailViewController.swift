@@ -19,10 +19,18 @@ class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var speciesLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getCharacter()
+        isSaved()
+    }
+    
+    func isSaved() {
+        if viewModel.checkSaved(characterId: CharacterDetailViewController.characterId) == true {
+            saveButton.image = UIImage(systemName: "star.fill")
+        }
     }
     
     func getCharacter() {
@@ -44,7 +52,11 @@ class CharacterDetailViewController: UIViewController {
     }
     
     @IBAction func saveBarButton(_ sender: Any) {
-        viewModel.saveCharacter(character: viewModel.character)
+        if viewModel.checkSaved(characterId: CharacterDetailViewController.characterId) == false {
+            viewModel.saveCharacter(character: viewModel.character, saveButton: saveButton)
+        } else {
+            viewModel.deleteCharacter(characterId: CharacterDetailViewController.characterId, saveButton: saveButton)
+        }
     }
     
     @IBAction func backBarButton(_ sender: Any) {
