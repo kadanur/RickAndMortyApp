@@ -12,6 +12,7 @@ import SDWebImage
 class HomeViewController: UITableViewController {
     
     var viewModel = CharacterListViewModel()
+    var pageCounter = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,7 @@ class HomeViewController: UITableViewController {
     }
     
     func getCharacters() {
-        WebServices().fetchCharactersData(url: URL(string: "https://rickandmortyapi.com/api/character/")!) { result in
+        WebServices().fetchCharactersData(url: URL(string: "https://rickandmortyapi.com/api/character/?page=\(pageCounter)")!) { result in
             if let result = result {
                 for i in result.results {
                     let item = CharacterViewModel.init(character: i)
@@ -57,4 +58,12 @@ extension HomeViewController {
         performSegue(withIdentifier: "toCharacterDetailFromHome", sender: nil)
     }
     
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastIndex = viewModel.countOfCharactersViewModel() - 1
+        if indexPath.row == lastIndex {
+            pageCounter = pageCounter + 1
+            print("Page:" , pageCounter)
+            getCharacters()
+        }
+    }
 }
