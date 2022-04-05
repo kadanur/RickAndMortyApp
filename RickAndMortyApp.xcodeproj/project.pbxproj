@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA4F03A527FC2ECD0086E949 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA4F03A327FC2ECD0086E949 /* CoreData.xcdatamodeld */; };
 		BA5213DF27EDB98200A631A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5213DE27EDB98200A631A7 /* AppDelegate.swift */; };
 		BA5213E127EDB98200A631A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5213E027EDB98200A631A7 /* SceneDelegate.swift */; };
 		BA5213E827EDB98300A631A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA5213E727EDB98300A631A7 /* Assets.xcassets */; };
@@ -22,9 +23,13 @@
 		BA52140F27EDCD3400A631A7 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA52140D27EDCD3400A631A7 /* CharacterCell.xib */; };
 		BA52141227EDDDCE00A631A7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA52141127EDDDCE00A631A7 /* SDWebImage */; };
 		BA52141427EDFAE700A631A7 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52141327EDFAE700A631A7 /* CharacterDetailViewModel.swift */; };
+		BA587D5E27FC2732000F8D8C /* Saved.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA587D5D27FC2732000F8D8C /* Saved.storyboard */; };
+		BA587D6027FC2741000F8D8C /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA587D5F27FC2741000F8D8C /* SavedViewController.swift */; };
+		BA587D6227FC2A42000F8D8C /* SavedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA587D6127FC2A42000F8D8C /* SavedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA4F03A427FC2ECD0086E949 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		BA5213DB27EDB98200A631A7 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5213DE27EDB98200A631A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA5213E027EDB98200A631A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +46,9 @@
 		BA52140C27EDCD3400A631A7 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		BA52140D27EDCD3400A631A7 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		BA52141327EDFAE700A631A7 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		BA587D5D27FC2732000F8D8C /* Saved.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Saved.storyboard; sourceTree = "<group>"; };
+		BA587D5F27FC2741000F8D8C /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		BA587D6127FC2A42000F8D8C /* SavedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 		BA5213F327EDB99A00A631A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BA4F03A327FC2ECD0086E949 /* CoreData.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -115,6 +124,7 @@
 			children = (
 				BA5213FB27EDC23300A631A7 /* Home */,
 				BA52140227EDC56800A631A7 /* CharacterDetail */,
+				BA587D5B27FC26FF000F8D8C /* Saved */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -153,6 +163,24 @@
 			children = (
 				BA52140C27EDCD3400A631A7 /* CharacterCell.swift */,
 				BA52140D27EDCD3400A631A7 /* CharacterCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BA587D5B27FC26FF000F8D8C /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				BA587D5C27FC2720000F8D8C /* Cell */,
+				BA587D5D27FC2732000F8D8C /* Saved.storyboard */,
+				BA587D5F27FC2741000F8D8C /* SavedViewController.swift */,
+				BA587D6127FC2A42000F8D8C /* SavedViewModel.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		BA587D5C27FC2720000F8D8C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -225,6 +253,7 @@
 				BA52140627EDC5F000A631A7 /* CharacterDetail.storyboard in Resources */,
 				BA52140F27EDCD3400A631A7 /* CharacterCell.xib in Resources */,
 				BA5213EB27EDB98300A631A7 /* LaunchScreen.storyboard in Resources */,
+				BA587D5E27FC2732000F8D8C /* Saved.storyboard in Resources */,
 				BA5213E827EDB98300A631A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,9 +270,12 @@
 				BA5213DF27EDB98200A631A7 /* AppDelegate.swift in Sources */,
 				BA52140E27EDCD3400A631A7 /* CharacterCell.swift in Sources */,
 				BA5213F827EDB9D200A631A7 /* WebServices.swift in Sources */,
+				BA587D6227FC2A42000F8D8C /* SavedViewModel.swift in Sources */,
 				BA52140427EDC59B00A631A7 /* CharacterDetailViewController.swift in Sources */,
 				BA52141427EDFAE700A631A7 /* CharacterDetailViewModel.swift in Sources */,
+				BA4F03A527FC2ECD0086E949 /* CoreData.xcdatamodeld in Sources */,
 				BA5213FA27EDBA6700A631A7 /* CharactersModel.swift in Sources */,
+				BA587D6027FC2741000F8D8C /* SavedViewController.swift in Sources */,
 				BA5213E127EDB98200A631A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +507,19 @@
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BA4F03A327FC2ECD0086E949 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BA4F03A427FC2ECD0086E949 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = BA4F03A427FC2ECD0086E949 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA5213D327EDB98200A631A7 /* Project object */;
 }

@@ -43,6 +43,10 @@ class CharacterDetailViewController: UIViewController {
         }
     }
     
+    @IBAction func saveBarButton(_ sender: Any) {
+        viewModel.saveCharacter(character: viewModel.character)
+    }
+    
     @IBAction func backBarButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

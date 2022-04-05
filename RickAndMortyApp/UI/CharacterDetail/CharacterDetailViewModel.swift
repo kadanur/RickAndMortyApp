@@ -6,9 +6,33 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
 struct CharacterDetailViewModel {
     var character: CharactersResult
+    
+    func saveCharacter(character: CharactersResult) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let newData = NSEntityDescription.insertNewObject(forEntityName: "CharacterEntity", into: context)
+        // Data Attributes
+        newData.setValue(character.gender, forKey: "gender")
+        newData.setValue(character.id, forKey: "id")
+        newData.setValue(character.image, forKey: "imageURL")
+        newData.setValue(character.location.name, forKey: "location")
+        newData.setValue(character.name, forKey: "name")
+        newData.setValue(character.species, forKey: "species")
+        newData.setValue(character.status, forKey: "status")
+        do {
+            try context.save()
+            print("Data is saved.")
+            print(character.name)
+        } catch {
+            print("Save error")
+            print(error.localizedDescription)
+        }
+    }
     
     var id: Int {
         return character.id

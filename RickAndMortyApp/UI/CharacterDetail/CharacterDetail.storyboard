@@ -79,6 +79,11 @@
                                 <action selector="backBarButton:" destination="Y6W-OH-hqX" id="Cg1-tb-TML"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="star" catalog="system" id="hpH-0K-Gga">
+                            <connections>
+                                <action selector="saveBarButton:" destination="Y6W-OH-hqX" id="fBY-hZ-YQy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="characterImage" destination="g7h-5k-0J5" id="WX2-a7-Xho"/>
@@ -115,6 +120,7 @@
     </scenes>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

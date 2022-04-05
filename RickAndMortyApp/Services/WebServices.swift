@@ -17,7 +17,6 @@ class WebServices {
             } else if let data = data {
                 do {
                     let result = try JSONDecoder().decode(CharactersMain.self, from: data)
-                    print(result)
                     completion(result)
                 } catch {
                     print("DECODE ERROR")
@@ -37,7 +36,6 @@ class WebServices {
             } else if let data = data {
                 do {
                     let result = try JSONDecoder().decode(CharactersResult.self, from: data)
-                    print(result)
                     comletion(result)
                 } catch {
                     print("DECODE ERROR")
