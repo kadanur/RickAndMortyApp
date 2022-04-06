@@ -25,7 +25,7 @@ class HomeViewModelTests: XCTestCase {
     }
 
     func test_countOfCharactersInCharactersViewModelFunction() {
-        XCTAssertEqual(viewModel.countOfCharactersViewModel(), viewModel.countOfCharactersViewModel())
+        XCTAssertEqual(viewModel.countOfCharactersViewModel(), 2)
     }
     
     func test_getCharacterViewModelFunction() {

@@ -22,7 +22,7 @@ class SavedViewModelTests: XCTestCase {
     }
     
     func test_numbersOfRowFunction() {
-        XCTAssertEqual(viewModel.numbersOfRow(), viewModel.savedCharacters.count)
+        XCTAssertEqual(viewModel.numbersOfRow(), 2)
     }
     
     func test_getSavedCharacterFunction() {
@@ -34,8 +34,8 @@ class SavedViewModelTests: XCTestCase {
         }
     }
     
-    func test_getDatasFunction(){
+    func test_getDatasFunctionNoThrow(){
         XCTAssertNoThrow(viewModel.getDatas(completion: { result in }))
     }
-
+    
 }
