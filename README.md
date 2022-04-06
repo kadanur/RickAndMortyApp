@@ -1,5 +1,5 @@
 # RickAndMortyApp
-My experiments in this project: MVVM + Closure, Xib files, Infinite Scroll (and fetch data with pagination) and CoreData. 
+My experiments in this project: MVVM + Closure, Xib files, Infinite Scroll (and fetch data with pagination), CoreData and Unit Tests. 
 I used The Rick and Morty API in this project and SDWebImage library.
 
 <img src="https://user-images.githubusercontent.com/28826993/161758661-ac265acf-8669-409e-b722-549f3ba3c8ee.gif" width="250">
