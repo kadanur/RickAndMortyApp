@@ -63,7 +63,7 @@ struct CharacterDetailViewModel {
         return true
     }
     
-    func saveCharacter(character: CharactersResult, saveButton: UIBarButtonItem) {
+    func saveCharacter(character: CharactersResult, saveButton: UIBarButtonItem?) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let newData = NSEntityDescription.insertNewObject(forEntityName: "CharacterEntity", into: context)
@@ -77,7 +77,7 @@ struct CharacterDetailViewModel {
         newData.setValue(character.status, forKey: "status")
         do {
             try context.save()
-            saveButton.image = UIImage(systemName: "star.fill")
+            saveButton?.image = UIImage(systemName: "star.fill")
             print("Data is saved.")
             NotificationCenter.default.post(name: NSNotification.Name("Need Reload"), object: nil)
             print(character.name)
@@ -87,7 +87,7 @@ struct CharacterDetailViewModel {
         }
     }
     
-    func deleteCharacter(characterId: Int, saveButton: UIBarButtonItem) {
+    func deleteCharacter(characterId: Int, saveButton: UIBarButtonItem?) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "CharacterEntity")
@@ -101,7 +101,7 @@ struct CharacterDetailViewModel {
             try context.save()
             print("Save deleted.")
             NotificationCenter.default.post(name: NSNotification.Name("Need Reload"), object: nil)
-            saveButton.image = UIImage(systemName: "star")
+            saveButton?.image = UIImage(systemName: "star")
         } catch {
             print("Delete Error.")
             print(error.localizedDescription)
