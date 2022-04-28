@@ -31,8 +31,8 @@ struct SavedViewModel {
             for result in results as! [NSManagedObject] {
                 let item = CharactersResult.init(id: result.value(forKey: "id") as! Int, name: result.value(forKey: "name") as! String, image: result.value(forKey: "imageURL") as! String, status: result.value(forKey: "status") as! String, species: result.value(forKey: "species") as! String, gender: result.value(forKey: "gender") as! String, location: CharacterLocation(name: result.value(forKey: "location") as! String))
                 savedCharacters.append(item)
-                completion(savedCharacters)
             }
+            completion(savedCharacters)
         } catch {
             print("CoreData Fetch Error.")
             print(error.localizedDescription)
